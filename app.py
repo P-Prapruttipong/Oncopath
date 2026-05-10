@@ -29,7 +29,7 @@ if uploaded_file is not None:
             "p53 signaling pathway"
         ]
 
-      for pathway in mock_pathways:
+for pathway in mock_pathways:
     st.markdown(f"### {pathway}")
 
         st.write("## Related Research Papers")
