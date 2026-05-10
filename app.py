@@ -22,14 +22,24 @@ if uploaded_file is not None:
     if st.button("Analyze"):
         st.write("## Inferred Cancer Pathways")
 
-mock_pathways = [
-    "PI3K-AKT signaling pathway",
-    "MAPK signaling pathway",
-    "Cell Cycle pathway",
-    "p53 signaling pathway"
+proteins = df["Protein"].tolist()
+
+pathways = []
+
+if "TP53" in proteins:
+    pathways.append("p53 signaling pathway")
+
+if "AKT1" in proteins:
+    pathways.append("PI3K-AKT signaling pathway")
+
+if "EGFR" in proteins:
+    pathways.append("MAPK signaling pathway")
+
+if "CDK4" in proteins:
+    pathways.append("Cell Cycle pathway")
 ]
 
-for pathway in mock_pathways:
+for pathway in pathways:
     st.markdown(f"### {pathway}")
 st.write("## Related Research Papers")
 
