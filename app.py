@@ -34,19 +34,18 @@ for pathway in mock_pathways:
 
 st.write("## Related Research Papers")
 
-        papers = [
-            {
-                "title": "Cancer signaling pathways and targeted therapy",
-                "link": "https://pubmed.ncbi.nlm.nih.gov/"
-            },
-            {
-                "title": "Protein interaction networks in cancer",
-                "link": "https://pubmed.ncbi.nlm.nih.gov/"
-            }
-        ]
+papers = [
+    {
+        "title": "Cancer signaling pathways and targeted therapy",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/"
+    },
+    {
+        "title": "Protein interaction networks in cancer",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/"
+    }
+]
 
-        for paper in papers:
-            st.markdown(f"- [{paper['title']}]({paper['link']})")
-
+for paper in papers:
+    st.markdown(f"- [{paper['title']}]({paper['link']})")
 else:
     st.info("Please upload a CSV file to begin analysis")
