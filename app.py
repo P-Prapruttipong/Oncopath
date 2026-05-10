@@ -22,16 +22,15 @@ if uploaded_file is not None:
     if st.button("Analyze"):
         st.write("## Inferred Cancer Pathways")
 
-        mock_pathways = [
-            "PI3K-AKT signaling pathway",
-            "MAPK signaling pathway",
-            "Cell Cycle pathway",
-            "p53 signaling pathway"
-        ]
+       mock_pathways = [
+    "PI3K-AKT signaling pathway",
+    "MAPK signaling pathway",
+    "Cell Cycle pathway",
+    "p53 signaling pathway"
+]
 
 for pathway in mock_pathways:
     st.markdown(f"### {pathway}")
-
 st.write("## Related Research Papers")
 
 papers = [
