@@ -32,7 +32,7 @@ if uploaded_file is not None:
 for pathway in mock_pathways:
     st.markdown(f"### {pathway}")
 
-        st.write("## Related Research Papers")
+st.write("## Related Research Papers")
 
         papers = [
             {
