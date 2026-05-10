@@ -22,7 +22,7 @@ if uploaded_file is not None:
     if st.button("Analyze"):
         st.write("## Inferred Cancer Pathways")
 
-       mock_pathways = [
+mock_pathways = [
     "PI3K-AKT signaling pathway",
     "MAPK signaling pathway",
     "Cell Cycle pathway",
